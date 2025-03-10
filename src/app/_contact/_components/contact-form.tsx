@@ -139,7 +139,7 @@ export default function ContactForm() {
               />
             </CardContent>
             <CardFooter className="flex justify-center">
-              <Button type="submit" disabled={isSubmitting}>
+              <Button type="submit" disabled={isSubmitting} className="mt-5">
                 {isSubmitting ? "Envoi..." : "S'inscrire"}
               </Button>
             </CardFooter>
