@@ -106,13 +106,14 @@
 
   .header {
     color: var(--white);
-    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.61);
+    text-shadow: 1.2px 1px 1px rgba(0, 0, 0, 0.8);
   }
 
   .header h1 {
+    color: #761617;
     font-family: var(--font--saint-delafield);
     font-size: 6rem;
-    margin-bottom: -45;
+    margin-bottom: -30;
   }
   .header .subtitle {
     font-size: 2rem;
