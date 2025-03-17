@@ -12,7 +12,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import { ContactFormInputs, formSchema } from "../_schemas/contact-form";
+import { ContactFormInputs, formSchema } from "../schemas/contact-form";
 import {
   Card,
   CardContent,
@@ -21,7 +21,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { useState, useTransition } from "react";
-import { sendForm } from "../_actions/send-form";
+import { sendForm } from "../actions/send-form";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
 export default function ContactForm() {
@@ -112,7 +112,7 @@ export default function ContactForm() {
                 name="attachments"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Photo</FormLabel>
+                    <FormLabel>Photo en tenue</FormLabel>
                     <FormControl>
                       <Input
                         type="file"

@@ -1,8 +1,8 @@
 "use server";
 
-import { resend } from "@/app/_mail";
-import { ContactFormInputs, formSchema } from "../_schemas/contact-form";
-import { EmailTemplate } from "../_components/email-template";
+import { resend } from "@/app/mail";
+import { ContactFormInputs, formSchema } from "../schemas/contact-form";
+import { EmailTemplate } from "../components/email-template";
 
 export async function sendForm(input: ContactFormInputs) {
   try {
@@ -41,7 +41,6 @@ export async function sendForm(input: ContactFormInputs) {
   } catch (e) {
     console.error(e);
 
-    // todo: envoyer message custom selon le code de l'erreur
     return {
       success: false,
       message: "Une erreur s'est produite lors de l'envoi du message",

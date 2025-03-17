@@ -1,6 +1,6 @@
 import localFont from "next/font/local";
 
-import ContactForm from "./_contact/_components/contact-form";
+import ContactForm from "./contact/components/contact-form";
 
 const authenticSignatureFont = localFont({
   src: "./fonts/Authentic Signature.otf",
