@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Bebas_Neue, Mrs_Saint_Delafield } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
 const bebasNeue = Bebas_Neue({
   variable: "--font--bebas-neue",
@@ -27,6 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${bebasNeue.variable} ${saintDelafield.variable} `}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
